@@ -425,7 +425,7 @@ var detectContent = function(){
 
   var d1 = new Date();
   var elems = allContentElems();
-  var interestAreaRect = windowRectTrimmed();
+  var interestAreaRect = windowRect();
   var d2 = new Date();
   console.log('it took '+ (d2-d1));
   allVisibleElementsRect(elems,interestAreaRect,function(vis_rect){
